@@ -13,6 +13,13 @@ IMAGE_PATHS = [
     "assets/images/outlook-login.png",
 ]
 
+VIDEO_PATHS = [
+    "assets/videos/product-plus-login.mp4",
+    "assets/videos/phone-verification.mp4",
+    "assets/videos/qq-email-register.mp4",
+    "assets/videos/free-to-plus-upgrade.mp4",
+]
+
 
 class SiteParser(HTMLParser):
     def __init__(self):
@@ -20,7 +27,8 @@ class SiteParser(HTMLParser):
         self.ids = set()
         self.faq_count = 0
         self.local_images = []
-        self.video_iframes = []
+        self.video_elements = []
+        self.video_sources = []
         self.video_fallbacks = []
 
     def handle_starttag(self, tag, attrs):
@@ -32,8 +40,10 @@ class SiteParser(HTMLParser):
             self.faq_count += 1
         if tag == "img" and "tutorial-image" in classes:
             self.local_images.append(attrs.get("src", ""))
-        if tag == "iframe" and "tutorial-video" in classes:
-            self.video_iframes.append(attrs.get("src", ""))
+        if tag == "video" and "tutorial-video" in classes:
+            self.video_elements.append(attrs)
+        if tag == "source" and "video-source" in classes:
+            self.video_sources.append(attrs.get("src", ""))
         if tag == "a" and "video-fallback" in classes:
             self.video_fallbacks.append(attrs.get("href", ""))
 
@@ -51,9 +61,11 @@ class SiteTests(unittest.TestCase):
         self.assertTrue({"top", "warranty-plus", "direct-plus"}.issubset(parser.ids))
         self.assertGreaterEqual(parser.faq_count, 12)
         self.assertEqual(parser.local_images, IMAGE_PATHS)
-        self.assertEqual(len(parser.video_iframes), 4)
+        self.assertEqual(len(parser.video_elements), 4)
+        self.assertEqual(parser.video_sources, VIDEO_PATHS)
         self.assertEqual(len(parser.video_fallbacks), 4)
-        self.assertTrue(all("blogger.com/video.g" in src for src in parser.video_iframes))
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn("blogger.com/video.g", html)
 
     def test_required_topics_are_present(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -80,6 +92,12 @@ class SiteTests(unittest.TestCase):
             image = ROOT / relative_path
             self.assertTrue(image.exists(), f"missing {relative_path}")
             self.assertGreater(image.stat().st_size, 1024, f"empty {relative_path}")
+
+    def test_local_videos_exist(self):
+        for relative_path in VIDEO_PATHS:
+            video = ROOT / relative_path
+            self.assertTrue(video.exists(), f"missing {relative_path}")
+            self.assertGreater(video.stat().st_size, 1024, f"empty {relative_path}")
 
     def test_supporting_files_and_pages_workflow_exist(self):
         for relative_path in ("styles.css", "script.js", ".github/workflows/pages.yml"):
