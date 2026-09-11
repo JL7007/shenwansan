@@ -20,12 +20,12 @@
 
 Download these image URLs without changing their order:
 
-1. `assets/images/tutorial-2fa-1.jpg` ← `https://blogger.googleusercontent.com/img/a/AVvXsEgZUIj2gjM0bZkEea1gAsWAnU6-HSPUfiRBk611XI2-QePuw2rorbzYpjPr_fQZ5g4hFzieS6l5HUUVNSgJVWjEvwTnOgKMJAxukBS-W5BJTxQuShXUicWCLhWiQmshX_ix1oaM32wJyL4rjwjeZZ6F95YQ1G7x-e8v4AXULKNHCPowCXcFUYCA-YmXsIgb`
-2. `assets/images/tutorial-2fa-2.jpg` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhgsvp1eVtLRIaeV8OhrTZ5Cuhygz79EP5SuiPG7FDe9AcGqNEtwngsM8KhPZpr_SOp48jJ4I9yuTshJ9WA3YMfw67mBKCvxEtEhoGMP5I6tJf7DD3AM5h0IdYwj7uJCoqPwoJ66Jdgl2HO7lE6tionHLyeQk0R6ZCI5byXFhh44aN4-nsxIw4Od8uHYyYh`
-3. `assets/images/tutorial-2fa-3.jpg` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhwkS_eEB1rkMN7UFgKFsnfWvI38angWHvt2UNBH8HK7ChjQl0GEkxbKyDhwV1czYvqIBpZeuDGmTjcLs5c1o6oEBZvyUpi4X4kQQtfcnWKXhUhUWqAl7V_YjImFEqF6sXsIUlr521QaWx6G1f60LkKcQ0KfhVSqM1MN_Q3msCdX4LH7L8hPyh1Iw-AfDhW`
-4. `assets/images/network-error-1.jpg` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhdfYOAM03vryIFTyJy64t4uQF6ulo0ulLfPJ8lMvlJ6zilh6ERsSqn0O0vydJghtg3KZAq3PxO9tdqbNUYYij9QKELj0m9Lbf1n5zGThQmUbZ7OySNDXazudwNsRjGpa-quqToIvfee5saFHTqD_o7W9y63GavPUAsUaq-wIOZGkqNHwAGHd6Nl06mG84D`
-5. `assets/images/network-error-2.jpg` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhR4LLrQbN2JRKPPZ8ajREGsfdhROS6zdYJ2XvJvAqM7zdiX96PDzEn3wztoEwgZOFOe_echOg2VseT4lSWzkTuOkFnEyzin-giudIFzzH4-ZLWlhokV6K_s9YSl9EY2I8WPSjCeF0xzhOLy-jKj7xNEKMGU6HUb_5ZYcwnY0HWlQ07uudLc-oJcWCl9JYS`
-6. `assets/images/outlook-login.jpg` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhXK-Em_iv1-MfH_H5Uj9C06W3ILAUC9jKd1KQSyj33FgT9_vC1QthhXnaRneTCvjsYuKqcvWLXVJcrDhdB8Ta1DPUnMEStnSrZR2aF4gGjHy8mepsH-3CZLqM9xxPanz0VRlV4vV0iaO5VxZ7KQafw5o6IreDGbq5soN89zBrldFd4iRvPhBbJnA6MWMLJ`
+1. `assets/images/tutorial-2fa-1.png` ← `https://blogger.googleusercontent.com/img/a/AVvXsEgZUIj2gjM0bZkEea1gAsWAnU6-HSPUfiRBk611XI2-QePuw2rorbzYpjPr_fQZ5g4hFzieS6l5HUUVNSgJVWjEvwTnOgKMJAxukBS-W5BJTxQuShXUicWCLhWiQmshX_ix1oaM32wJyL4rjwjeZZ6F95YQ1G7x-e8v4AXULKNHCPowCXcFUYCA-YmXsIgb`
+2. `assets/images/tutorial-2fa-2.png` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhgsvp1eVtLRIaeV8OhrTZ5Cuhygz79EP5SuiPG7FDe9AcGqNEtwngsM8KhPZpr_SOp48jJ4I9yuTshJ9WA3YMfw67mBKCvxEtEhoGMP5I6tJf7DD3AM5h0IdYwj7uJCoqPwoJ66Jdgl2HO7lE6tionHLyeQk0R6ZCI5byXFhh44aN4-nsxIw4Od8uHYyYh`
+3. `assets/images/tutorial-2fa-3.png` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhwkS_eEB1rkMN7UFgKFsnfWvI38angWHvt2UNBH8HK7ChjQl0GEkxbKyDhwV1czYvqIBpZeuDGmTjcLs5c1o6oEBZvyUpi4X4kQQtfcnWKXhUhUWqAl7V_YjImFEqF6sXsIUlr521QaWx6G1f60LkKcQ0KfhVSqM1MN_Q3msCdX4LH7L8hPyh1Iw-AfDhW`
+4. `assets/images/network-error-1.png` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhdfYOAM03vryIFTyJy64t4uQF6ulo0ulLfPJ8lMvlJ6zilh6ERsSqn0O0vydJghtg3KZAq3PxO9tdqbNUYYij9QKELj0m9Lbf1n5zGThQmUbZ7OySNDXazudwNsRjGpa-quqToIvfee5saFHTqD_o7W9y63GavPUAsUaq-wIOZGkqNHwAGHd6Nl06mG84D`
+5. `assets/images/network-error-2.png` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhR4LLrQbN2JRKPPZ8ajREGsfdhROS6zdYJ2XvJvAqM7zdiX96PDzEn3wztoEwgZOFOe_echOg2VseT4lSWzkTuOkFnEyzin-giudIFzzH4-ZLWlhokV6K_s9YSl9EY2I8WPSjCeF0xzhOLy-jKj7xNEKMGU6HUb_5ZYcwnY0HWlQ07uudLc-oJcWCl9JYS`
+6. `assets/images/outlook-login.png` ← `https://blogger.googleusercontent.com/img/a/AVvXsEhXK-Em_iv1-MfH_H5Uj9C06W3ILAUC9jKd1KQSyj33FgT9_vC1QthhXnaRneTCvjsYuKqcvWLXVJcrDhdB8Ta1DPUnMEStnSrZR2aF4gGjHy8mepsH-3CZLqM9xxPanz0VRlV4vV0iaO5VxZ7KQafw5o6IreDGbq5soN89zBrldFd4iRvPhBbJnA6MWMLJ`
 
 Use these four iframe sources:
 
@@ -40,12 +40,12 @@ Use these four iframe sources:
 
 **Files:**
 - Create: `tests/test_site.py`
-- Create: `assets/images/tutorial-2fa-1.jpg`
-- Create: `assets/images/tutorial-2fa-2.jpg`
-- Create: `assets/images/tutorial-2fa-3.jpg`
-- Create: `assets/images/network-error-1.jpg`
-- Create: `assets/images/network-error-2.jpg`
-- Create: `assets/images/outlook-login.jpg`
+- Create: `assets/images/tutorial-2fa-1.png`
+- Create: `assets/images/tutorial-2fa-2.png`
+- Create: `assets/images/tutorial-2fa-3.png`
+- Create: `assets/images/network-error-1.png`
+- Create: `assets/images/network-error-2.png`
+- Create: `assets/images/outlook-login.png`
 
 **Interfaces:**
 - Consumes: 原 Blogger 页面中的 6 个图片 URL。
@@ -86,7 +86,7 @@ git commit -m "test: define FAQ content contract"
 - Create: `script.js`
 
 **Interfaces:**
-- Consumes: `assets/images/*.jpg` 和设计文档中的内容顺序。
+- Consumes: `assets/images/*.png` 和设计文档中的内容顺序。
 - Produces: 浏览器可直接打开的完整单页网站。
 
 - [ ] **Step 1: Build semantic HTML**

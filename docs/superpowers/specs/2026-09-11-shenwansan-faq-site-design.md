@@ -47,7 +47,7 @@
 - `index.html`：页面语义结构和全部已确认文案。
 - `styles.css`：配色、排版、响应式布局和交互状态。
 - `script.js`：导航增强与小型交互；网站核心内容在禁用 JavaScript 时仍可阅读。
-- `assets/images/`：6 张本地说明图片。
+- `assets/images/`：6 张本地 PNG 说明图片。
 - `.github/workflows/pages.yml`：GitHub Pages 自动发布流程。
 - `README.md`：网站用途、本地预览和发布地址。
 
