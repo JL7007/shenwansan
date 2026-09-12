@@ -11,8 +11,3 @@ document.querySelector("[data-action='collapse']")?.addEventListener("click", ()
     card.open = false;
   });
 });
-
-const currentYear = document.querySelector("#current-year");
-if (currentYear) {
-  currentYear.textContent = String(new Date().getFullYear());
-}

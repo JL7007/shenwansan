@@ -97,6 +97,15 @@ class SiteTests(unittest.TestCase):
             html,
         )
 
+    def test_brand_and_support_copy_are_simplified(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn("沈万三的AI聚宝盆", html)
+        self.assertIn("账号问题联系管理员", html)
+        self.assertNotIn("沈万三 · 使用指南", html)
+        self.assertNotIn("成品账号使用与售后", html)
+        self.assertNotIn("PLUS 客服 1 号", html)
+        self.assertNotIn("<footer", html)
+
     def test_local_images_exist(self):
         for relative_path in IMAGE_PATHS:
             image = ROOT / relative_path

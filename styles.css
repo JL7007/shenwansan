@@ -148,8 +148,7 @@ summary:focus-visible {
 .topbar,
 .hero-content,
 .page-shell,
-.notice-strip,
-footer {
+.notice-strip {
   width: min(1100px, calc(100% - 40px));
   margin-inline: auto;
 }
@@ -789,35 +788,6 @@ kbd {
   margin: 0;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 18px 34px;
-  align-items: start;
-  padding: 38px 0 50px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 14px;
-}
-
-footer strong {
-  color: var(--text);
-}
-
-footer p {
-  margin: 4px 0 0;
-}
-
-footer a {
-  font-weight: 700;
-  text-decoration: none;
-}
-
-footer small {
-  grid-column: 1 / -1;
-  font-family: "SFMono-Regular", Consolas, monospace;
-}
-
 @media (max-width: 760px) {
   .hero {
     min-height: 540px;
@@ -826,8 +796,7 @@ footer small {
   .topbar,
   .hero-content,
   .page-shell,
-  .notice-strip,
-  footer {
+  .notice-strip {
     width: min(100% - 28px, 1100px);
   }
 
@@ -909,13 +878,6 @@ footer small {
     margin-top: 84px;
   }
 
-  footer {
-    grid-template-columns: 1fr;
-  }
-
-  footer small {
-    grid-column: auto;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
