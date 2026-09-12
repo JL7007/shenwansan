@@ -5,6 +5,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE_PATHS = [
+    "assets/images/outlook-bind-email.png",
     "assets/images/tutorial-2fa-1.png",
     "assets/images/tutorial-2fa-2.png",
     "assets/images/tutorial-2fa-3.png",
@@ -71,6 +72,7 @@ class SiteTests(unittest.TestCase):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         required_topics = (
             "如何使用质保 30 天成品 PLUS 卡密",
+            "首次登录无绑定邮箱提示的情况，按照如下方式处理",
             "如何增加 GPT 密码以及 2FA 保护",
             "是否需要接国外手机验证码",
             "售后客服找谁",
@@ -86,6 +88,14 @@ class SiteTests(unittest.TestCase):
         )
         for topic in required_topics:
             self.assertIn(topic, html)
+
+    def test_first_login_password_guidance_is_present(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn(
+            "如果邮箱密码显示无法修改或者首次登录时没有提示你密码修改，"
+            "可以不修改，然后增加或修改 GPT 密码，并增加 2FA 保护。",
+            html,
+        )
 
     def test_hero_uses_tutorial_title_without_old_intro(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
