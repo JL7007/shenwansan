@@ -87,6 +87,16 @@ class SiteTests(unittest.TestCase):
         for topic in required_topics:
             self.assertIn(topic, html)
 
+    def test_hero_uses_tutorial_title_without_old_intro(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn("<title>使用教程｜沈万三</title>", html)
+        self.assertIn("<h1>使用教程</h1>", html)
+        self.assertNotIn(
+            "把账号使用、验证码、售后与故障处理集中到一个页面。"
+            "遇到问题时，先按分类找到对应答案。",
+            html,
+        )
+
     def test_local_images_exist(self):
         for relative_path in IMAGE_PATHS:
             image = ROOT / relative_path
