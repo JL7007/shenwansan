@@ -72,7 +72,8 @@ class SiteTests(unittest.TestCase):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         required_topics = (
             "如何使用质保 30 天成品 PLUS 卡密",
-            "首次登录无绑定邮箱提示的情况，按照如下方式处理",
+            "首次登录无绑定邮箱提示的情况，可以按照如下方式处理"
+            "（也可以不处理，直接修改/增加GPT密码+增加2FA）",
             "如何增加 GPT 密码以及 2FA 保护",
             "是否需要接国外手机验证码",
             "售后客服找谁",
